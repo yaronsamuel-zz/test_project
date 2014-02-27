@@ -1,0 +1,16 @@
+{% load static %}
+
+    
+<div id='gallery'>
+{% for image in images %}
+        {{ image.pictureURL }} 
+        </br>
+        <img src="{{ image.pictureURL }}" title="{{ image.title }}" style="height:150px">
+        </br>
+{% endfor %}
+
+
+</div>
+
+
+
